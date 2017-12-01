@@ -1,5 +1,5 @@
-﻿using Xunit;
-using AdventDay1;
+﻿using AdventDay1;
+using Xunit;
 
 namespace Advent.Tests
 {
