@@ -6,16 +6,35 @@ using System.Threading.Tasks;
 
 namespace AdventDay1
 {
-    public class InverseCaptchaCalculator
+    public static class InverseCaptchaCalculator
     {
-        private int _sum = 0;
-
-        public int SumRepeatedDigits(string captcha)
+        public static int SumRepeatedDigits(string captcha)
         {
+            var sum = 0;
             for (int i = 0; i < captcha.Length; i++)
             {
-                
+                if (captcha[i] == captcha[(i + 1) % captcha.Length])
+                {
+                    sum += int.Parse(captcha[i].ToString());
+                }
             }
+
+            return sum;
+        }
+
+        public static int SumSameHalfwayAroundDigits(string captcha)
+        {
+            var sum = 0;
+            int halfway = captcha.Length / 2;
+            for (int i = 0; i < captcha.Length; i++)
+            {
+                if (captcha[i] == captcha[(i + halfway) % captcha.Length])
+                {
+                    sum += int.Parse(captcha[i].ToString());
+                }
+            }
+
+            return sum;
         }
     }
 }
