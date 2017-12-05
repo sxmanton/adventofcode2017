@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace AdventDay3
 {
     class Program

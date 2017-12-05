@@ -1,6 +1,6 @@
-﻿using Xunit;
+﻿using System.Collections.Generic;
 using AdventDay4;
-using System.Collections.Generic;
+using Xunit;
 
 namespace Advent.Tests
 {

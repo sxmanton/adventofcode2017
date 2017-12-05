@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventDay4
 {
@@ -30,7 +28,7 @@ namespace AdventDay4
                     }
                     else
                     {
-                        Console.WriteLine("Failed Part 2: {0}", passphrase);
+                        Debug.WriteLine("Failed Part 2: {0}", passphrase);
                     }
                 }
             }
