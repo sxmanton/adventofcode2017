@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day10Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
@@ -74,6 +75,10 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdventDay10\AdventDay10.csproj">
+      <Project>{6bb7b7a5-4da5-47fb-8077-d31631400dca}</Project>
+      <Name>AdventDay10</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AdventDay1\AdventDay1.csproj">
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>
       <Name>AdventDay1</Name>
