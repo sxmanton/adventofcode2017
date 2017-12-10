@@ -64,6 +64,7 @@
     <Compile Include="Day5Tests.cs" />
     <Compile Include="Day7Tests.cs" />
     <Compile Include="Day8Tests.cs" />
+    <Compile Include="Day9Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +101,10 @@
     <ProjectReference Include="..\AdventDay8\AdventDay8.csproj">
       <Project>{198983cc-c5f2-465d-83f4-40d0db5d70b9}</Project>
       <Name>AdventDay8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay9\AdventDay9.csproj">
+      <Project>{dcba8210-5857-44f2-9045-1c2c6ba67082}</Project>
+      <Name>AdventDay9</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
