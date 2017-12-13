@@ -57,12 +57,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day10Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
     <Compile Include="Day4Tests.cs" />
     <Compile Include="Day5Tests.cs" />
     <Compile Include="Day6Tests.cs" />
+    <Compile Include="Day7Tests.cs" />
+    <Compile Include="Day8Tests.cs" />
+    <Compile Include="Day9Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +76,10 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AdventDay10\AdventDay10.csproj">
+      <Project>{6bb7b7a5-4da5-47fb-8077-d31631400dca}</Project>
+      <Name>AdventDay10</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AdventDay1\AdventDay1.csproj">
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>
       <Name>AdventDay1</Name>
@@ -96,6 +104,18 @@
       <Project>{2e54876a-0a85-4e2f-a750-b61603771eaa}</Project>
       <Name>AdventDay6</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AdventDay7\AdventDay7.csproj">
+      <Project>{150e0b24-f230-4141-9e4b-406a83c9467e}</Project>
+      <Name>AdventDay7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay8\AdventDay8.csproj">
+      <Project>{198983cc-c5f2-465d-83f4-40d0db5d70b9}</Project>
+      <Name>AdventDay8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay9\AdventDay9.csproj">
+      <Project>{dcba8210-5857-44f2-9045-1c2c6ba67082}</Project>
+      <Name>AdventDay9</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
@@ -105,6 +125,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="day2testinput2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="day7testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="day8testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
