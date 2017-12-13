@@ -11,7 +11,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Advent.Tests</RootNamespace>
     <AssemblyName>Advent.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Day10Tests.cs" />
+    <Compile Include="Day11Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
@@ -79,6 +80,10 @@
     <ProjectReference Include="..\AdventDay10\AdventDay10.csproj">
       <Project>{6bb7b7a5-4da5-47fb-8077-d31631400dca}</Project>
       <Name>AdventDay10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay11\AdventDay11.csproj">
+      <Project>{c1c36b79-c835-42d3-bbeb-4dbb7fb7c2ed}</Project>
+      <Name>AdventDay11</Name>
     </ProjectReference>
     <ProjectReference Include="..\AdventDay1\AdventDay1.csproj">
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>
