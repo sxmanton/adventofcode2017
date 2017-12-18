@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="Day10Tests.cs" />
     <Compile Include="Day11Tests.cs" />
+    <Compile Include="Day12Tests.cs" />
+    <Compile Include="Day13Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
@@ -84,6 +86,14 @@
     <ProjectReference Include="..\AdventDay11\AdventDay11.csproj">
       <Project>{c1c36b79-c835-42d3-bbeb-4dbb7fb7c2ed}</Project>
       <Name>AdventDay11</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay12\AdventDay12.csproj">
+      <Project>{493c1506-431c-4b02-94af-18037536c930}</Project>
+      <Name>AdventDay12</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay13\AdventDay13.csproj">
+      <Project>{bf9bb55e-e765-4035-84dc-aeb697350c25}</Project>
+      <Name>AdventDay13</Name>
     </ProjectReference>
     <ProjectReference Include="..\AdventDay1\AdventDay1.csproj">
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>
@@ -126,6 +136,12 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="day12testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="day13testinput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="day2testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
