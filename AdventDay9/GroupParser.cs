@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventDay9
+﻿namespace AdventDay9
 {
     public class GroupParser
     {

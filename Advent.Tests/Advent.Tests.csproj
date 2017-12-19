@@ -61,6 +61,7 @@
     <Compile Include="Day11Tests.cs" />
     <Compile Include="Day12Tests.cs" />
     <Compile Include="Day13Tests.cs" />
+    <Compile Include="Day14Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
@@ -94,6 +95,26 @@
     <ProjectReference Include="..\AdventDay13\AdventDay13.csproj">
       <Project>{bf9bb55e-e765-4035-84dc-aeb697350c25}</Project>
       <Name>AdventDay13</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay14\AdventDay14.csproj">
+      <Project>{e93af1a1-de85-4495-b7f1-33c998fb323f}</Project>
+      <Name>AdventDay14</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay15\AdventDay15.csproj">
+      <Project>{7d6ea3b5-7090-4080-b184-70bb22baa305}</Project>
+      <Name>AdventDay15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay16\AdventDay16.csproj">
+      <Project>{029a9f93-477b-4ea4-8318-1e8b4c5b691a}</Project>
+      <Name>AdventDay16</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay17\AdventDay17.csproj">
+      <Project>{70e73d89-4dc9-41b6-8edf-10e6e1d8f79c}</Project>
+      <Name>AdventDay17</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdventDay18\AdventDay18.csproj">
+      <Project>{b2ff5deb-f834-4aa3-8dc8-30913b1b4016}</Project>
+      <Name>AdventDay18</Name>
     </ProjectReference>
     <ProjectReference Include="..\AdventDay1\AdventDay1.csproj">
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AdventDay12;
 using Xunit;
-using AdventDay12;
 
 namespace Advent.Tests
 {
