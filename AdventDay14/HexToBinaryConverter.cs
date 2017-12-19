@@ -15,7 +15,7 @@ namespace AdventDay14
 
         public static string HexCharToBinary(char hexChar)
         {
-            return Convert.ToInt32(hexChar.ToString(), 16).ToString();
+            return Convert.ToString(Convert.ToInt32(hexChar.ToString(), 16), 2).PadLeft(4, '0');
         }
     }
 }
