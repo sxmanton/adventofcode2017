@@ -26,7 +26,7 @@ namespace Advent.Tests
             Assert.Equal(expected, Judge.CompareValues(valueA, valueB));
         }
 
-        [Fact]
+        [Fact(Skip = "Integration")]
         public void IntegrationTest_Passes()
         {
             int count = 40000000;
