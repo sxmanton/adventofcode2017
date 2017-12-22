@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AdventDay18
 {
@@ -6,13 +10,7 @@ namespace AdventDay18
     {
         static void Main(string[] args)
         {
-            var virus = new VirusSimulator("input.txt");
-
-            var infectionBursts = virus.InfectionBurstsAfterTotalBursts(10000);
-
-            Console.WriteLine(infectionBursts);
-
-            Console.ReadLine();
+            
         }
     }
 }

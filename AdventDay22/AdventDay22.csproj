@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2FF5DEB-F834-4AA3-8DC8-30913B1B4016}</ProjectGuid>
+    <ProjectGuid>{7A195958-32F7-4C15-8A44-601C1971E2B3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AdventDay18</RootNamespace>
-    <AssemblyName>AdventDay18</AssemblyName>
+    <RootNamespace>AdventDay22</RootNamespace>
+    <AssemblyName>AdventDay22</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DirectionEnum.cs" />
+    <Compile Include="EvolvedVirusStrategy.cs" />
+    <Compile Include="GridSquareStatus.cs" />
+    <Compile Include="GridState.cs" />
+    <Compile Include="IVirusStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleVirusStrategy.cs" />
+    <Compile Include="VirusSimulator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -65,7 +65,7 @@
     <Compile Include="Day15Tests.cs" />
     <Compile Include="Day16Tests.cs" />
     <Compile Include="Day17Tests.cs" />
-    <Compile Include="Day18Tests.cs" />
+    <Compile Include="Day22Tests.cs" />
     <Compile Include="Day1Tests.cs" />
     <Compile Include="Day2Tests.cs" />
     <Compile Include="Day3Tests.cs" />
@@ -124,6 +124,10 @@
       <Project>{8b853453-65c4-439e-9101-e461202220bd}</Project>
       <Name>AdventDay1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AdventDay22\AdventDay22.csproj">
+      <Project>{7a195958-32f7-4c15-8a44-601c1971e2b3}</Project>
+      <Name>AdventDay22</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AdventDay2\AdventDay2.csproj">
       <Project>{8b5c0b0f-ef0b-48bb-87c0-0dbece694d84}</Project>
       <Name>AdventDay2</Name>
@@ -167,7 +171,7 @@
     <Content Include="day13testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="day18testinput.txt">
+    <Content Include="day22testinput.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="day2testinput.txt">
