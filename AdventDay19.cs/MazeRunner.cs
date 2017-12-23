@@ -36,8 +36,9 @@ namespace AdventDay19
             }
         }
 
-        public string GetMazeLetterOrder()
+        public string GetMazeLetterOrder(out int numSteps)
         {
+            numSteps = 1;
             currentY = 0;
             currentX = lines[currentY].IndexOf('|');
             var width = lines[currentY].Length;
@@ -62,16 +63,20 @@ namespace AdventDay19
                         break;
                 }
 
-                char currentChar;
-                try
+                if (currentY < 0 || currentY >= height || currentX < 0 || currentX >= width)
                 {
-                    currentChar = lines[currentY][currentX];
+                    lostContinuity = true;
+                    break;                    
                 }
-                catch (ArgumentOutOfRangeException)
+
+                char currentChar = lines[currentY][currentX];
+                if (currentChar == ' ')
                 {
                     lostContinuity = true;
                     break;
                 }
+
+                numSteps++;
 
                 if (char.IsLetter(currentChar))
                 {
@@ -82,35 +87,51 @@ namespace AdventDay19
                 {
                     if (currentDirection == Direction.Up || currentDirection == Direction.Down)
                     {
-                        if (currentX - 1 >= 0 && lines[currentY][currentX - 1] == '-')
+                        if (currentX - 1 >= 0)
                         {
-                            currentDirection = Direction.Left;
-                            Debug.WriteLine("Changing to go left");
-                            continue;
+                            var leftChar = lines[currentY][currentX - 1];
+                            if (leftChar == '-' || char.IsLetter(leftChar))
+                            {
+                                currentDirection = Direction.Left;
+                                Debug.WriteLine("Changing to go left");
+                                continue;
+                            }
                         }
-                        if (currentX + 1 < width && lines[currentY][currentX + 1] == '-')
+                        if (currentX + 1 < width)
                         {
-                            currentDirection = Direction.Right;
-                            Debug.WriteLine("Changing to go right");
-                            continue;
+                            var rightChar = lines[currentY][currentX + 1];
+                            if (rightChar == '-' || char.IsLetter(rightChar))
+                            {
+                                currentDirection = Direction.Right;
+                                Debug.WriteLine("Changing to go right");
+                                continue;
+                            }
                         }
                         throw new Exception("Couldn't find valid turn direction");
                     }
                     else
                     {
-                        if (currentY - 1 >= 0 && lines[currentY - 1][currentX] == '|')
+                        if (currentY - 1 >= 0 )
                         {
-                            currentDirection = Direction.Up;
-                            Debug.WriteLine("Changing to go up");
-                            continue;
+                            var upChar = lines[currentY - 1][currentX];
+                            if (upChar == '|' || char.IsLetter(upChar))
+                            {
+
+                                currentDirection = Direction.Up;
+                                Debug.WriteLine("Changing to go up");
+                                continue;
+                            }
                         }
-                        if (currentY + 1 < height && lines[currentY + 1][currentX] == '|')
+                        if (currentY + 1 < height)
                         {
-                            currentDirection = Direction.Down;
-                            Debug.WriteLine("Changing to go down");
-                            continue;
+                            var downChar = lines[currentY + 1][currentX];
+                            if (downChar == '|' || char.IsLetter(downChar))
+                            {
+                                currentDirection = Direction.Down;
+                                Debug.WriteLine("Changing to go down");
+                                continue;
+                            }
                         }
-                        lostContinuity = true;
                         throw new Exception("Couldn't find valid turn direction");
                     }
                 }

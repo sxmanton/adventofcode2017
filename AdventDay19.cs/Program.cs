@@ -12,9 +12,10 @@ namespace AdventDay19
         {
             var runner = new MazeRunner("input.txt");
 
-            var result = runner.GetMazeLetterOrder();
+            var result = runner.GetMazeLetterOrder(out int numSteps);
 
             Console.WriteLine(result);
+            Console.WriteLine(numSteps);
 
             Console.ReadLine();
         }
