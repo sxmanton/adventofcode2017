@@ -10,7 +10,12 @@ namespace AdventDay18
     {
         static void Main(string[] args)
         {
-            
+
+            var duetRunner = new DuetRunner("input.txt");
+
+            Console.WriteLine(duetRunner.FirstRecoveredFrequency());
+
+            Console.ReadLine();
         }
     }
 }
